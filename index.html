@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1><div id="goodvibes"></div></h1>
+    <!-- En div med ID som ändras i funktionen showTime(). Den visar den aktuella tiden då knappen Time har tryckts. -->
+    <div id="tid"></div>
+    <br>
+    <div id="bild">
+        <!-- Vanlig bild med en satt height och width och id som används i funktionen change_img(). -->
+        <img src="kemo.jpg" height="20%" width="12%" id="idBild">
+    </div>
+    <!-- En div med alla knappar. Det finns divs i denna diven för att göra koden och strukturen enklare. -->
+    <div id="buttons_div">
+        <!-- Knapparna har samma klassnamn så dem ser samma ut. -->
+        <div>
+            <button class="allbuttons" id="changebg" onclick="change_bg();">Change Bg</button>
+            <button class="allbuttons" onclick="good_vibes();">Good vibes</button>
+            <button class="allbuttons" onclick="showTime();">Time</button>
+        </div>
+        <div>
+            <button class="allbuttons" id="pictureChange" onclick="change_img();">Change Picture</button>
+            <button class="allbuttons" onclick="hide_img();">Hide picture</button>
+            <button class="allbuttons" onclick="show_picture();">Show picture</button>
+        </div>
+    
+    </div>
+</body>
+</html>
